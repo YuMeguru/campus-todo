@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">校园待办</string>
+    <string name="settings_title">设置</string>
+    <string name="raw_title">采集到的消息</string>
+    <string name="rules_title">采集规则</string>
+    <string name="info_title">班级通知</string>
+    <string name="device_title">设备同步</string>
+</resources>

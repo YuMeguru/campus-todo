@@ -1,0 +1,6 @@
+# Name,   Type, SubType, Offset,   Size,     Flags
+# NVS 给到 64KB：待办快照最大约 16KB，还要同时容纳 BLE 的绑定密钥（NIMBLE_NVS_PERSIST）。
+# 原来是 24KB，装一份大快照就快满了。
+nvs,      data, nvs,     0x9000,   0x10000,
+phy_init, data, phy,     0x19000,  0x1000,
+factory,  app,  factory, 0x20000,  0x7e0000,

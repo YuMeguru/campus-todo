@@ -1,0 +1,25 @@
+# ---- Android ----
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.iml
+.idea/
+
+# ---- ESP-IDF ----
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig.old
+firmware/*.bin
+firmware/*.elf
+firmware/*.map
+
+# 字体生成工具的依赖，npm install 装得回来
+firmware/tools/font/node_modules/
+
+# ---- 日志 ----
+*.log
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
