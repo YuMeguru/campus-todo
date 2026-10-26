@@ -88,5 +88,3 @@ cd android
 ## 许可
 
 MIT，见 [LICENSE](LICENSE)。
-
-`firmware` 目录里的东西也一并覆盖在这个协议下，但别指望它能跑。
