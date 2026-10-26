@@ -14,7 +14,20 @@
 
 采集范围在设置里自己勾，默认开的是主流聊天、校园和短信类。常驻通知（播放器、下载进度）一律不采。
 
-## API Key
+## 申请 DeepSeek API Key
+
+1. 打开 https://platform.deepseek.com/ 注册，手机号或邮箱都行
+2. 登录后左侧菜单找「API keys」
+3. 点「创建 API key」，起个名字（`campus-todo` 就行），**把生成的 key 立刻复制走**
+   - 只显示这一次，关掉页面就再也看不到了
+4. 去「充值」页面充点钱。不充值是调不通的，余额为 0 会直接返回 402
+5. 打开 App → 设置 → DeepSeek API Key → 粘贴 → 保存
+
+费用按 token 算。这个 App 一次整理发十条通知，一天几十次调用花不了几毛钱。
+
+里面也做了封顶：每天 60 次调用、30 万输入 token、6 万输出 token，撞到就停，第二天自己重置。
+
+## API Key 存在哪
 
 存在手机本地的 Android Keystore 里，AES-256-GCM 加密，不上传云端，也不同步。
 
@@ -71,3 +84,9 @@ cd android
 产物在 `android/app/build/outputs/apk/debug/app-debug.apk`。
 
 环境是用 `android-setup.ps1` 铺的，走腾讯和清华的镜像（这台机器上 `dl.google.com` 和 `github.com` 都不可达）。脚本幂等，重装跑一次就行。
+
+## 许可
+
+MIT，见 [LICENSE](LICENSE)。
+
+`firmware` 目录里的东西也一并覆盖在这个协议下，但别指望它能跑。
